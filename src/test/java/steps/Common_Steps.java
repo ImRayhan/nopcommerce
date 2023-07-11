@@ -12,7 +12,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 public class Common_Steps {
-	WebDriver driver;
+	private WebDriver driver;
 
 	@Before(order = 0)
 	public void setUp() {
@@ -28,7 +28,7 @@ public class Common_Steps {
 //			final byte[] shot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 //			scenario.attach(shot, "image/png", scenario.getName());
 //		}
-		// driver.quit();
+		 driver.quit();
 		Thread.sleep(1000);
 	}
 

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import steps.Common_Steps;
 
 public class Common_Actions {
-	WebDriver driver;
+private	WebDriver driver;
 	Common_Steps common_Steps;
 
 	public Common_Actions(Common_Steps common_Steps) {
@@ -31,6 +31,9 @@ public class Common_Actions {
 
 	public void navigateForword() {
 		driver.navigate().forward();
+	}
+	public void navigateRefresh() {
+		driver.navigate().refresh();
 	}
 
 }

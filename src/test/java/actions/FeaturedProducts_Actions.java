@@ -14,7 +14,7 @@ import steps.Common_Steps;
 
 public class FeaturedProducts_Actions {
 
-	WebDriver driver;
+private	WebDriver driver;
 	FeaturedProducts_Elements featuredProducts_Elements;
 
 	public FeaturedProducts_Actions(Common_Steps common_Steps) {

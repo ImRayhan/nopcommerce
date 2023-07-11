@@ -14,13 +14,10 @@ import io.cucumber.java.en.When;
 public class FeaturedProducts_Steps {
 	Common_Actions common_Actions;
 	FeaturedProducts_Actions featuredProducts_Actions;
-	
-	
 
 	public FeaturedProducts_Steps(Common_Actions common_Actions, FeaturedProducts_Actions featuredProducts_Actions) {
 		this.common_Actions = common_Actions;
 		this.featuredProducts_Actions = featuredProducts_Actions;
-		
 
 	}
 
@@ -75,10 +72,10 @@ public class FeaturedProducts_Steps {
 		if (featuredProducts_Actions.GroundhipingAdreesMethod().isDisplayed()) {
 			featuredProducts_Actions.GroundhipingAdreesMethod().isSelected();
 			featuredProducts_Actions.GroundhipingAdreesMethod().click();
-			featuredProducts_Actions.ContinueShipingMethodClick();		
+			featuredProducts_Actions.ContinueShipingMethodClick();
 		}
-		//featuredProducts_Actions.GroundhipingAdreesMethod();
-		//featuredProducts_Actions.ContinueShipingMethodClick();
+		// featuredProducts_Actions.GroundhipingAdreesMethod();
+		// featuredProducts_Actions.ContinueShipingMethodClick();
 		featuredProducts_Actions.CheckMoneyOrder();
 		featuredProducts_Actions.ContinuePaymentMethod();
 		featuredProducts_Actions.ContinuePaymentInformation();
