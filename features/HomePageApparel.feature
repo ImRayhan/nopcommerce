@@ -9,6 +9,8 @@ Feature: HomePage Apparel Products
     And I verify all shoe item is visible
     And I adding all the Item to the cart
     Then I placing the order
+      | FirstName | LastName  | Email             | Company | Country       | State    | City    | Adress       | Zipcode | PhoneNum   | FaxNum    |
+      | rayhan    | chowdhury | rayhanc@yahoo.com | toto    | United States | New York | Buffalo | 42 Alice ave |   14215 | 9294529947 | 123456789 |
     And I check the order has been complete
 
   @UAT2

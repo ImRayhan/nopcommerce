@@ -1,11 +1,9 @@
 package steps;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 
 import actions.Common_Actions;
 import actions.FeaturedProducts_Actions;
-import elements.FeaturedProducts_Elements;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
