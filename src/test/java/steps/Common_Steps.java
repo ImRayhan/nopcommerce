@@ -28,7 +28,7 @@ public class Common_Steps {
 //			final byte[] shot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 //			scenario.attach(shot, "image/png", scenario.getName());
 //		}
-		// driver.quit();
+		 driver.quit();
 		Thread.sleep(1000);
 	}
 

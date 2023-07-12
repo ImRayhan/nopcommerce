@@ -1,6 +1,7 @@
 package actions;
 
 import java.time.Duration;
+import java.util.Iterator;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -106,9 +107,8 @@ public class ApparelProducts_Action {
 //				.click();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0, 1000);");
-	
 
-		 apparelProducts_Elements.addToCartPrintColorNikeFloralRosheCustomizedRunningShoesApparelElement.click();
+		apparelProducts_Elements.addToCartPrintColorNikeFloralRosheCustomizedRunningShoesApparelElement.click();
 
 	}
 
@@ -124,6 +124,170 @@ public class ApparelProducts_Action {
 	public String TotalAmmountOfShoesText() {
 		return apparelProducts_Elements.totalAmmountsOfShoeslElement.getText();
 
+	}
+
+	public void ClickClothing() {
+		apparelProducts_Elements.ClothingApparelElement.click();
+
+	}
+
+	public String CustomTShirtText() {
+		return apparelProducts_Elements.CustomTShirtCLOTHINGElement.getText();
+
+	}
+
+	public void CustomTShirtClick() {
+		apparelProducts_Elements.CustomTShirtCLOTHINGElement.click();
+
+	}
+
+	public void EnterYourTextCustomTShirt(String text) {
+		apparelProducts_Elements.enteryourtextCustomTShirtCLOTHINGElement.sendKeys(text);
+
+	}
+
+	public void AddToCartCustomTShirt() {
+		apparelProducts_Elements.addToCardustomTShirtCLOTHINGElement.click();
+
+	}
+
+	public String Levi511JeansTEXT() {
+		return apparelProducts_Elements.levis511JeansCLOTHINGElement.getText();
+
+	}
+
+	public void Levi511JeansClick() {
+		apparelProducts_Elements.levis511JeansCLOTHINGElement.click();
+
+	}
+
+	public void webTablePriceLevi511Jeans() {
+		int row = apparelProducts_Elements.webTableTRlevis511JeansCLOTHINGElement.size();
+		int colm = apparelProducts_Elements.webTableTDlevis511JeansCLOTHINGElement.size();
+
+		for (int i = 0; i <= row; i++) {
+			for (int j = 0; j <= colm; j++) {
+
+				System.out.println(apparelProducts_Elements.webTableTDlevis511JeansCLOTHINGElement.get(j).getText());
+
+			}
+
+		}
+
+	}
+
+	public void AddToCartLevi511JeansClick() {
+		apparelProducts_Elements.aaddToCartlevis511JeansCLOTHINGElement.click();
+
+	}
+
+	public String NikeTailwindLooseShortSleeveRunningShirtTEXT() {
+		return apparelProducts_Elements.nikeTailwindLooseShortSleeveRunningShirtCLOTHINGElement.getText();
+
+	}
+
+	public void NikeTailwindLooseShortSleeveRunningShirtClick() {
+		apparelProducts_Elements.nikeTailwindLooseShortSleeveRunningShirtCLOTHINGElement.click();
+
+	}
+
+	public void SizeNikeTailwindLooseShortSleeveRunningShirt(String size) {
+		Select sel = new Select(apparelProducts_Elements.sizeNikeTailwindLooseShortSleeveRunningShirtCLOTHINGElement);
+		sel.selectByVisibleText(size);
+
+	}
+
+	public void AddToCartSizeNikeTailwindLooseShortSleeveRunningShirt() {
+		apparelProducts_Elements.addToCartNikeTailwindLooseShortSleeveRunningShirtCLOTHINGElement.click();
+
+	}
+
+	public String OversizedWomenTShirtTEXT() {
+		return apparelProducts_Elements.oversizedWomenTShirtCLOTHINGElement.getText();
+
+	}
+
+	public void ClickAccessories() {
+		apparelProducts_Elements.accessoriesgApparelElement.click();
+
+	}
+
+	public void OversizedWomenTShirtClick() {
+		apparelProducts_Elements.oversizedWomenTShirtCLOTHINGElement.click();
+
+	}
+
+	public void AddToCartOversizedWomenTShirt() {
+		apparelProducts_Elements.addToCartoversizedWomenTShirtCLOTHINGElement.click();
+
+	}
+
+	public String TotalAmmountOfClothing() {
+		return apparelProducts_Elements.totalAmmountsOfCLOTHINGElement.getText();
+
+	}
+
+	public void ClickaccessoriesgApparel() {
+		apparelProducts_Elements.accessoriesgApparelElement.click();
+
+	}
+
+	public String ObeyPropagandaHatTEXT() {
+
+		return apparelProducts_Elements.ObeyPropagandaHatElement.getText();
+
+	}
+
+	public void SizeSelectObeyPropagandaHat(String size) {
+		Select sel = new Select(apparelProducts_Elements.sizeSelectObeyPropagandaHatElement);
+		sel.selectByVisibleText(size);
+
+	}
+
+	public void ObeyPropagandaHatClick() {
+		apparelProducts_Elements.ObeyPropagandaHatElement.click();
+		
+	}
+	public void AddToCartObeyPropagandaHat() {
+		apparelProducts_Elements.AddCartSelectObeyPropagandaHatElement.click();
+
+	}
+
+	public String rayBanAviatorSunglassesTEXT() {
+
+		return apparelProducts_Elements.rayBanAviatorSunglassesElement.getText();
+
+	}
+
+	public void rayBanAviatorSunglassesClick() {
+		apparelProducts_Elements.rayBanAviatorSunglassesElement.click();
+
+	}
+
+	public void AddTocartRayBanAviatorSunglassesClick() {
+		apparelProducts_Elements.AddToCartRayBanAviatorSunglassesElement.click();
+
+	}
+
+	public String reversibleHorseferryCheckBeltTEXT() {
+
+		return apparelProducts_Elements.reversibleHorseferryCheckBeltElement.getText();
+
+	}
+
+	public void reversibleHorseferryCheckBeltClick() {
+		apparelProducts_Elements.reversibleHorseferryCheckBeltElement.click();
+
+	}
+
+	public void AddToCartReversibleHorseferryCheckBeltClick() {
+		apparelProducts_Elements.AddTocartReversibleHorseferryCheckBeltElement.click();
+
+	}
+	public String TotalaMMOUNToFaccessories() {
+		return apparelProducts_Elements.totalAmmountsOfAccessoriesElement.getText();
+		
+		
 	}
 
 }

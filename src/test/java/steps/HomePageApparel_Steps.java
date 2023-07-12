@@ -61,6 +61,7 @@ public class HomePageApparel_Steps {
 		}
 
 	}
+
 	@When("I adding all the Item to the cart")
 	public void i_adding_all_the_item_to_the_cart() throws InterruptedException {
 		apparelProducts_Action.AdidasConsortiumCampus80sRunningShoesClick();
@@ -72,57 +73,126 @@ public class HomePageApparel_Steps {
 		apparelProducts_Action.SizeSelectNikeFloralRosheCustomizedRunningShoes("8");
 		apparelProducts_Action.ColorsSelectNikeFloralRosheCustomizedRunningShoes("White/Black");
 		apparelProducts_Action.PrintNikeFloralRosheCustomizedRunningShoes();
-	  //  Thread.sleep(5000);	
+		// Thread.sleep(5000);
 		apparelProducts_Action.AddToCartNikeFloralRosheCustomizedRunningShoes();
 		common_Actions.navigateBack();
 		apparelProducts_Action.NikeSBZoomStefanjanoskiMediumMintClick();
 		apparelProducts_Action.AddToCartNikeSBZoomStefanjanoskiMediumMintClick();
 		commonly_Actions.ClickCross();
 		commonly_Actions.ShoppingCartHoverAndGotoCartClick();
-	
+
 		if (apparelProducts_Action.TotalAmmountOfShoesText().equals("$97.56")) {
 			commonly_Actions.clickTearmsConditions();
 			commonly_Actions.clickCheckOutShoppingCart();
-			
-			
+
 		}
 
 	}
 
 	@When("I Click on clothing products")
 	public void i_click_on_clothing_products() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+
+		apparelProducts_Action.ClickClothing();
+
 	}
 
 	@When("I verify all cloth item is present")
 	public void i_verify_all_cloth_item_is_present() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		if (!apparelProducts_Action.CustomTShirtText().equalsIgnoreCase("Custom T-Shirt")) {
+			fail("fail in Custom T-Shirt");
+
+		} else if (!apparelProducts_Action.Levi511JeansTEXT().equalsIgnoreCase("Levi's 511 Jeans")) {
+			fail("fail in Levi's 511 Jeans");
+
+		} else if (!apparelProducts_Action.NikeTailwindLooseShortSleeveRunningShirtTEXT()
+				.equalsIgnoreCase("Nike Tailwind Loose Short-Sleeve Running Shirt")) {
+			fail("fail in Nike Tailwind Loose Short-Sleeve Running Shirt");
+
+		} else if (!apparelProducts_Action.OversizedWomenTShirtTEXT().equalsIgnoreCase("Oversized Women T-Shirt")) {
+			fail("fail in Oversized Women T-Shirt");
+
+		}
+
 	}
 
 	@When("I adding all clothing Item to the cart")
 	public void i_adding_all_clothing_item_to_the_cart() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+
+		apparelProducts_Action.CustomTShirtClick();
+		apparelProducts_Action.EnterYourTextCustomTShirt("custom tshirt");
+		apparelProducts_Action.AddToCartCustomTShirt();
+		common_Actions.navigateBack();
+		apparelProducts_Action.Levi511JeansClick();
+		// apparelProducts_Action.webTablePriceLevi511Jeans();
+		apparelProducts_Action.AddToCartLevi511JeansClick();
+		common_Actions.navigateBack();
+		apparelProducts_Action.NikeTailwindLooseShortSleeveRunningShirtClick();
+		apparelProducts_Action.SizeNikeTailwindLooseShortSleeveRunningShirt("Small");
+		apparelProducts_Action.AddToCartSizeNikeTailwindLooseShortSleeveRunningShirt();
+		common_Actions.navigateBack();
+		apparelProducts_Action.OversizedWomenTShirtClick();
+		apparelProducts_Action.AddToCartOversizedWomenTShirt();
+		commonly_Actions.ClickCross();
+		commonly_Actions.ShoppingCartHoverAndGotoCartClick();
+
+	}
+
+	@Then("I check Clothing total Ammount is matches")
+	public void i_check_clothing_total_ammount_is_matches() {
+		if (apparelProducts_Action.TotalAmmountOfClothing().equals("$97.50")) {
+			commonly_Actions.clickTearmsConditions();
+			commonly_Actions.clickCheckOutShoppingCart();
+
+		}
+
 	}
 
 	@When("I Click on Accessories products")
 	public void i_click_on_accessories_products() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		apparelProducts_Action.ClickAccessories();
 	}
 
 	@When("I verify all Accessories item is shoes as expected")
 	public void i_verify_all_accessories_item_is_shoes_as_expected() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		if (!apparelProducts_Action.ObeyPropagandaHatTEXT().equalsIgnoreCase("Obey Propaganda Hat")) {
+			fail("fail in Obey Propaganda Hat");
+
+		} else if (!apparelProducts_Action.rayBanAviatorSunglassesTEXT()
+				.equalsIgnoreCase("Ray Ban Aviator Sunglasses")) {
+			fail("fail in Ray Ban Aviator Sunglasses");
+
+		} else if (!apparelProducts_Action.reversibleHorseferryCheckBeltTEXT()
+				.equalsIgnoreCase("Reversible Horseferry Check Belt")) {
+			fail("fail in Reversible Horseferry Check Belt");
+
+		}
 	}
 
 	@When("I adding all Accessories product to the cart")
 	public void i_adding_all_accessories_product_to_the_cart() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		apparelProducts_Action.ObeyPropagandaHatClick();
+		apparelProducts_Action.SizeSelectObeyPropagandaHat("Small");
+		apparelProducts_Action.AddToCartObeyPropagandaHat();
+		common_Actions.navigateBack();
+		apparelProducts_Action.rayBanAviatorSunglassesClick();
+		apparelProducts_Action.AddTocartRayBanAviatorSunglassesClick();
+		common_Actions.navigateBack();
+		apparelProducts_Action.reversibleHorseferryCheckBeltClick();
+		apparelProducts_Action.AddToCartReversibleHorseferryCheckBeltClick();
+		commonly_Actions.ClickCross();
+		commonly_Actions.ShoppingCartHoverAndGotoCartClick();
+
+	}
+
+	@Then("I check Accessories total Ammount is correct")
+	public void i_check_accessories_total_ammount_is_correct() {
+
+		if (apparelProducts_Action.TotalaMMOUNToFaccessories().equalsIgnoreCase("$100.00")) {
+			commonly_Actions.clickTearmsConditions();
+			commonly_Actions.clickCheckOutShoppingCart();
+
+		}
+
 	}
 
 	@Then("I check the order has been complete")
