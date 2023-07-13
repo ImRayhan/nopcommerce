@@ -123,6 +123,13 @@ public class HomePageApparel_Steps {
 		apparelProducts_Action.AddToCartCustomTShirt();
 		common_Actions.navigateBack();
 		apparelProducts_Action.Levi511JeansClick();
+		try {
+			apparelProducts_Action.webTablePriceLevi511Jeans();
+
+		} catch (Exception e) {
+			System.out.println(e);
+
+		}
 		// apparelProducts_Action.webTablePriceLevi511Jeans();
 		apparelProducts_Action.AddToCartLevi511JeansClick();
 		common_Actions.navigateBack();
@@ -131,6 +138,13 @@ public class HomePageApparel_Steps {
 		apparelProducts_Action.AddToCartSizeNikeTailwindLooseShortSleeveRunningShirt();
 		common_Actions.navigateBack();
 		apparelProducts_Action.OversizedWomenTShirtClick();
+		try {
+			apparelProducts_Action.webTableOverSizeWomanTshirt();
+			
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
 		apparelProducts_Action.AddToCartOversizedWomenTShirt();
 		commonly_Actions.ClickCross();
 		commonly_Actions.ShoppingCartHoverAndGotoCartClick();

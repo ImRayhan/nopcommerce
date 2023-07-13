@@ -168,9 +168,11 @@ public class ApparelProducts_Action {
 		for (int i = 0; i <= row; i++) {
 			for (int j = 0; j <= colm; j++) {
 
-				System.out.println(apparelProducts_Elements.webTableTDlevis511JeansCLOTHINGElement.get(j).getText());
+				System.out
+						.print(apparelProducts_Elements.webTableTDlevis511JeansCLOTHINGElement.get(j).getText() + " | ");
 
 			}
+			System.out.println();
 
 		}
 
@@ -217,6 +219,23 @@ public class ApparelProducts_Action {
 
 	}
 
+	public void webTableOverSizeWomanTshirt() {
+		int row = apparelProducts_Elements.webTableTRoversizedWomenTShirtCLOTHINGElement.size();
+		int colm = apparelProducts_Elements.webTableTDoversizedWomenTShirtCLOTHINGElement.size();
+
+		for (int i = 0; i <= row; i++) {
+			for (int j = 0; j <= colm; j++) {
+
+				System.out.print(
+						apparelProducts_Elements.webTableTDoversizedWomenTShirtCLOTHINGElement.get(j).getText() + " | ");
+
+			}
+			System.out.println();
+
+		}
+
+	}
+
 	public void AddToCartOversizedWomenTShirt() {
 		apparelProducts_Elements.addToCartoversizedWomenTShirtCLOTHINGElement.click();
 
@@ -246,8 +265,9 @@ public class ApparelProducts_Action {
 
 	public void ObeyPropagandaHatClick() {
 		apparelProducts_Elements.ObeyPropagandaHatElement.click();
-		
+
 	}
+
 	public void AddToCartObeyPropagandaHat() {
 		apparelProducts_Elements.AddCartSelectObeyPropagandaHatElement.click();
 
@@ -284,10 +304,10 @@ public class ApparelProducts_Action {
 		apparelProducts_Elements.AddTocartReversibleHorseferryCheckBeltElement.click();
 
 	}
+
 	public String TotalaMMOUNToFaccessories() {
 		return apparelProducts_Elements.totalAmmountsOfAccessoriesElement.getText();
-		
-		
+
 	}
 
 }

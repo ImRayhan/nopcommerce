@@ -99,10 +99,10 @@ public class ApparelProducts_Elements {
 	public WebElement oversizedWomenTShirtCLOTHINGElement;
 
 	@FindBy(xpath = "//tbody/tr")
-	public WebElement webTableTRoversizedWomenTShirtCLOTHINGElement;
+	public List<WebElement> webTableTRoversizedWomenTShirtCLOTHINGElement;
 
 	@FindBy(xpath = "//tbody/tr/td")
-	public WebElement webTableTDoversizedWomenTShirtCLOTHINGElement;
+	public List<WebElement> webTableTDoversizedWomenTShirtCLOTHINGElement;
 
 	@FindBy(id = "add-to-cart-button-28")
 	public WebElement addToCartoversizedWomenTShirtCLOTHINGElement;
