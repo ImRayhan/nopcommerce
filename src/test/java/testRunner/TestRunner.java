@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 		plugin = {"pretty", "html:target//cucumber-reports//cucumber-html-report.html"},
 		dryRun = false,
 		monochrome = true,
-		tags = "@unit"
+		tags = "@smoke33"
 		//name = {"Logo"}
 		)
 public class TestRunner {
